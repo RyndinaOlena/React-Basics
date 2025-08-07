@@ -9,6 +9,7 @@ import TodoList from "./components/todo-list";
 import Forms from "./components/forms";
 import Tailwind from "./components/tilewind";
 import UseEffect from "./components/useEffect";
+import Api from "./components/api";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Link to="/hw7">Forms HW-7</Link>
           <Link to="/hw8">UseEffect HW-8</Link>
           <Link to="/hw11">Tilewind HW-11</Link>
+          <Link to="/hw13">Api HW-13</Link>
         </ul>
       </nav>
       <Routes>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/hw7" element={<Forms />} />
         <Route path="/hw8" element={<UseEffect />} />
         <Route path="/hw11" element={<Tailwind />} />
+        <Route path="/hw13" element={<Api />} />
+        <Route path="*" element={<HW />} />
       </Routes>
     </>
   );
